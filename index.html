@@ -8,30 +8,28 @@
   <script src="tailwind.config.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script>
-    function init() {
-        let count = localStorage.getItem('counter');
-        if(count === null){
-            count = 0;
-            localStorage.setItem('counter', count);
-        }
-        count = parseInt(count);
-        updateCount(count);
-    }
-    function incrementCounter() {
-        let count = parseInt(localStorage.getItem('counter'));
-        count = count + 1;
-        localStorage.setItem('counter', count);
-        updateCount(count);
-        return true;
-    }
-    function updateCount(count) {
-        document.getElementById("count").innerHTML = ""+count+"";
-    }
-</script>
+    <style>
+    .yomanyo{
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+body{
+  background-image: url(jojo.jpg);
+}
+
+p{
+  color: black;
+}
+
+  </style>
 </head>
 <body>
-  <header class="text-gray-600 body-font">
+  <header class="yomanyo text-gray-600 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <span class="ml-3 text-xl">Tech Rituals</span>
@@ -47,9 +45,9 @@
     <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
-      <div class="p-4 lg:w-1/3">
+      <div class="yomanyo p-4 lg:w-1/3">
         <a href="Posts/a-beginners-guide-to-aosp.html">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+        <div class="h-full bg-gray-100 bg-opacity-0 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">ANDROID, AOSP</h2>
           <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">A beginner's guide to AOSP</h1>
           <p class="leading-relaxed mb-3">This article explains you a go through as a beginner to <b>AOSP</b>. Which would surely give you a good idea about AOSP</p>
@@ -69,8 +67,8 @@
         </div>
       </div>
      </a>
-      <div class="p-4 lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+      <div class="yomanyo p-4 lg:w-1/3">
+        <div class="h-full bg-gray-100 bg-opacity-0 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
           <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">COMIG SOON</h1>
           <p class="leading-relaxed mb-3">On It's way.</p>
@@ -95,8 +93,8 @@
           </div>
         </div>
       </div>
-      <div class="p-4 lg:w-1/3">
-        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+      <div class="yomanyo p-4 lg:w-1/3">
+        <div class="h-full bg-gray-100 bg-opacity-0 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
           <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
           <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">COMING SOON</h1>
           <p class="leading-relaxed mb-3">On It's Way.</p>
