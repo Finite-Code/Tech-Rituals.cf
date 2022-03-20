@@ -1,6 +1,6 @@
-# Security Policy
+### Security Policy
 
-# Supported Versions
+## Supported Versions
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -9,8 +9,8 @@
 
 # Founded Vulnerabities
 
-# None
+None
 
 ## Reporting a Vulnerability
 
-# Everyone always has an option to report vulnerability via an issue or pull request
+# "Everyone always has an option to report vulnerability via an issue or pull request"
